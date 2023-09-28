@@ -1,0 +1,56 @@
+[
+	{
+		"FileName" : [ "file1", "File2", "File3"],
+		"Column" : [
+			{
+				"MccMnc" :"ABC",
+				"Rates" : "XYZ"
+			}
+		]
+	},
+	
+	
+	{
+		"FileName" : [ "file1", "File2", "File3"],
+		"Column" : [
+			{
+				"MccMnc" :"ABC",
+				"Rates" : "XYZ"
+			}
+		]
+	}
+
+
+
+
+
+]
+===================================
+var abc =[];
+
+
+
+var FIles = [];
+var columns = [];
+
+
+/// inside loop
+
+var fileItem = {};
+var columnItem = {};
+
+fileItem["File1"] = "abc.xls"
+
+columnItem["MccMnc"] = "ABC";
+
+columns.push(columnItem);
+FIles.push(fileItem);
+
+// CHange FIledset
+var FileDetails = {};
+
+FileDetails["Columns"] = columns;
+FileDetails["Files"] = FIles;
+abc.push(FileDetails);
+
+

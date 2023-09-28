@@ -1,0 +1,144 @@
+  
+.json-diff-input {
+  height: 100%;
+  width:100%;
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+
+.json-diff-input .CodeMirror {
+  height: 100%;
+}
+ 
+
+.json-diff-input {
+  transition: width .3s;
+}
+
+.json-diff-input.split {
+  width: 50%;
+}
+
+.json-diff-input.collapse {
+  width: 0%;
+}
+
+.json-diff-input.expand {
+  width: 100%;
+}
+
+.json-diff-input.split .input-split {
+  display: none;
+}
+
+.json-diff-input.collapse .input-collapse {
+  display: none;
+}
+
+.json-diff-input.expand .input-expand {
+  display: none;
+}
+    
+.left-panel {
+  width: 200px;
+  height: calc(100% - 48px);
+  float: left;
+  border-right: solid 2px #181A1B;
+  box-sizing: border-box;
+  position: relative;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+  
+#carbonads {
+  border-radius: 4px 2px;
+  background-color: #292929;
+  padding: 16px;
+}
+
+.lighttheme #carbonads {
+  margin-bottom: 16px;
+}
+
+.ad-container a {
+  display: block;
+}
+
+.diff-inputs {
+  /*width: calc(100% - 200px);*/
+  /*float: left;*/
+  /*height: calc(100% - 48px);*/
+}
+   
+.lighttheme #header {
+  color: #1D1F21;
+  background-color: #f9f9f9;
+}
+
+.lighttheme .header-icon path {
+  fill: #1D1F21;
+}
+
+.lighttheme .settings-menu-content {
+  background-color: #eaeaea;
+}
+
+.lighttheme .settings-menu:hover {
+  background-color: #eaeaea;
+}
+
+.lighttheme .left-panel {
+  border-right-color: #dddddd;
+  border-right-width: 1px;
+}
+
+.lighttheme .ad-container * {
+  color: #1D1F21 !important;
+}
+ 
+.diff-history-item {
+  color: white;
+  font-family: monospace;
+  padding: 8px 0;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.diff-history-item:hover {
+  background-color: #2d2d2d;
+}
+
+.lighttheme .diff-history-item {
+  color: #1D1F21;
+}
+
+.lighttheme .diff-history-item:hover {
+  background-color: #e4e4e4;
+}
+  
+.made-by-text {
+  margin-top: 8px;
+  padding-top: 8px;
+  background-color: #1D1F21;
+  margin-left: -16px;
+  padding-left: 16px;
+  margin-right: -16px;
+  padding-right: 16px;
+  margin-bottom: -24px;
+  padding-bottom: 16px;
+}
+
+.made-by-text a {
+  text-decoration: none;
+  color: #e4e4e4;
+  font-family: monospace;
+}
+
+.made-by-text img {
+  height: 15px;
+  vertical-align: text-bottom;
+}

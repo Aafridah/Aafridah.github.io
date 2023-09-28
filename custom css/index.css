@@ -1,0 +1,67 @@
+/* adding external font */
+@font-face {
+    font-family: Mooli-Regular;
+    src: url(fonts/Mooli/Mooli-Regular.ttf);
+  }
+.content{
+    height: 100vh;
+    font-family: Mooli-Regular;
+}
+.page-header{
+    background-color:  white;
+}
+.side-bar{
+    background-color: cornflowerblue;
+    
+}
+.fa-rotate-15 {
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+
+
+.brand{
+    font-weight: bold;
+    color: white;
+}
+.brand-large{
+    font-size: xx-large;
+}
+.brand-small{
+    font-size: x-large;
+}
+.brand, .brand:hover
+{   
+    text-decoration: none;
+}
+.sidebar-divider{
+    border-top: 1px solid whitesmoke;
+}
+.sidebar-icon{
+    color:white;
+    padding-right:30px;
+}
+.nav-item{
+    padding-top: 10px;
+    color:white;
+}
+/* .sidebar-link
+{   
+    
+} */
+.sidebar-link, .sidebar-link:hover
+{   
+    text-decoration: none;
+    color: white;
+}
+/* .page{
+   
+
+} */
+
+.page-navbar{
+background-color: #6495ed;
+}
