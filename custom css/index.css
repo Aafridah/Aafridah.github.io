@@ -7,7 +7,7 @@
     height: 100vh;
     font-family: Mooli-Regular;
 }
-.page-header{
+.main-header{
     background-color:  white;
 }
 .side-bar{
@@ -64,4 +64,11 @@
 
 .page-navbar{
 background-color: #6495ed;
+}
+
+.text-xs{
+    font-size: x-small;
+}
+.text-grey{
+color:dimgrey;
 }
