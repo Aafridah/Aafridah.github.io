@@ -124,12 +124,33 @@
               <div class="main-header">
                 <nav class="navbar justify-content-end">
                   <div class="d-xs-block d-sm-none flex-grow-1 p-1">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                       <i class="fa-solid fa-bars"></i></button>
                   </div>
 
-              
-                  <div class="p-2">
+                  <div class=" d-xs-block d-sm-none dropdown p-1">
+                    <a class="dropdown-toggle text-s text-grey" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-search fa-fw"></i>
+                    </a>
+                  
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="searchDropdown">
+                      <form class="form-inline mr-auto w-100 navbar-search">
+                          <div class="input-group">
+                              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                              <div class="input-group-append">
+                                  <button class="btn btn-primary" type="button">
+                                      <i class="fas fa-search fa-sm"></i>
+                                  </button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                  </div>
+
+                 
+                  
+
+                  <div class="p-2 d-none d-sm-block">
                       <form>
                         <div class="input-group">
                           <input type="text" class="form-control form-control-sm bg-light border-0 " placeholder="Search..." aria-label="Search" aria-describedby="basic-addon1">
@@ -142,10 +163,10 @@
                   
                     
                   </div>
-                  <div class="p-2 d-none d-sm-block">
+                  <div class="p-2 ">
                     <div class="vr"></div>
                   </div>
-                  <div class="p-2 d-none d-sm-block">
+                  <div class="p-2">
                     <div id="profile" class="dropdown">
                       <a href="#" class="text-reset text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="d-none d-md-inline  text-grey mr-2 text-gray-600 text-wrap text-s">Douglas McGee</span>
@@ -168,7 +189,7 @@
               <div class="page-body container-fluid">
                 <div class="page-heading p-2 d-flex justify-content-between">
                   <h1 class="">Dashboard</h1>
-                  <button class="btn btn-warning btn-sm">
+                  <button class="btn btn-sm btn-primary shadow-sm">
                     <i title="Generate Report" class="fa-solid fa-download"></i> <span class="d-none d-md-inline">Generate Report</span>
                   </button>
                 </div>
