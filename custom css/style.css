@@ -3,6 +3,10 @@
     font-family: Mooli-Regular;
     src: url(fonts/Mooli/Mooli-Regular.ttf);
   }
+  :root {
+    --background-color : #4e73df;
+  }
+
 .content{
     height: 100vh;
     font-family: Mooli-Regular;
@@ -69,6 +73,36 @@ background-color: #6495ed;
 .text-xs{
     font-size: x-small;
 }
+
+.text-s{
+    font-size: smaller;
+}
 .text-grey{
 color:dimgrey;
 }
+
+.login-page, .register_page{
+    background-color: var(--background-color);
+    font-family: Mooli-Regular;
+}
+
+.btn-facebook{
+    background-color: #30497c;
+    color:white;
+}
+
+.btn-facebook:hover {
+    color: white;
+    background-color:  #1f3052;
+    border-color:  #1f3052;
+  }
+
+  .dropdown-toggle::after { 
+    content: none; 
+} 
+
+/* .dropdown-menu-right{
+    right: 0;
+  left: auto;
+} */
+
