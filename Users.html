@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <title>Customer</title>
+
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css" integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.rtl.min.css" integrity="sha512-C9DqRFOOTJ5aY4nPjM2zWBP1leudW4G1Sdb5fjRqdP/Vvfyx0bgittDhurMhu/LlXw3oC/QRlPz47qQPTYl+FA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-reboot.min.css" integrity="sha512-ZHQv/ue+hZQ+Jd+JKhxic17TUraZ9UwS6G7RcwSrQEE9j/m/AGRwj1OmYrkP43H0B/Wf0pg3hfbHCMAS6SGHOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-reboot.rtl.min.css" integrity="sha512-8DTDj1o84gmw86S6Qrh//DhOl73pYrkrV5rD3/JDj9VZk6nwijhYPhees3NQQM22A6UqOXBX09ULKNSurfETHw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-utilities.min.css" integrity="sha512-IspcQcJxnKFKfac3SzzLPXyGt77Twdkh1QmoLJlk+VDWCeGNVf7rCl/Srop+WwzX3S7IS2nxe9sfqLuMergysw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-utilities.rtl.min.css" integrity="sha512-g/9zc34RrAHk9cSFEodVsDR+TjDAhw9+VjWHnbK6kZe6sK4xTpPJ6cqJYd3WXfFmQuNLIkhDetQdm6fOOzj/nQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css" integrity="sha512-SRg0d/3qeXy0utrb7F4+4jkFHhzdyvqjAd2i9ub0zWrPS80PoRaAtzmbMeVRYtApxoEcE6tcFZaHRY5UbwrTaw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     <link rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-theme-alpine.css"/>
+
+     <!-- custom css -->
+     <link rel="stylesheet" href="custom css/style.css"/>
+</head>
+<body>
+    <div class="container-fluid" style="background-color: #e8e8e8;">
+   
+        <div class="row content">
+
+            <div class="side-bar col-sm-4 col-md-3 col-lg-2 d-none d-md-block">
+                <nav class="navbar">
+                  <div>
+                      <a class="navbar-brand brand brand-large" href="#">
+                        <i class="fas fa-laugh-wink fa-rotate-15 brand-logo"></i><span class="d-none d-md-inline">Brand</span>
+                      </a>
+                      <hr class="sidebar-divider my-0">
+                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="sidebar-link" href="#">
+                            <i class="fa-solid fa-desktop"></i>
+                            <span>Dashboard</span>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="sidebar-link" href="#">
+                                  <i class="fa-solid fa-users"></i>
+                              <span>Users</span>
+                          </a>
+                        </li>
+                      </ul>
+                  </div>
+                </nav>
+                  
+            </div>
+
+            <div class="side-bar col-sm-1 d-none d-sm-block d-md-none d-lg-none">
+              <nav class="navbar justify-content-center">
+                <div>
+                  <a class="navbar-brand brand brand-small" href="#">
+                    <!-- <img src="https://picsum.photos/200" alt="brand-logo" class="img-fluid brand-logo"> -->
+                    <i class="fas fa-laugh-wink fa-rotate-15 h2" ></i>
+                  </a>
+                </div>
+                    
+                    <hr class="sidebar-divider my-0">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                      <li class="nav-item" style="align-self: center;display: flex;">
+                          <a class="sidebar-link" href="#">
+                          <i class="fa-solid fa-desktop"></i>
+                      </a>
+                      </li>
+                      <li class="nav-item" style="align-self: center;display: flex;">
+                            <a class="sidebar-link" href="#">
+                                <i class="fa-solid fa-users"></i>
+                        </a>
+                      </li>
+                    </ul>
+              </nav>
+                
+          </div>
+
+          <div class="side-bar offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" data-bs-scroll="true" data-bs-backdrop="false" aria-labelledby="offcanvasExampleLabel" style="width:fit-content">
+            <div class="offcanvas-header p-0">
+              <div class="">
+                <a class="navbar-brand brand brand-large" href="#">
+                  <i class="fas fa-laugh-wink fa-rotate-15 brand-logo">
+  
+                  </i><span class="d-md-inline">Brand</span>
+                </a>
+              </div>
+              <div class="mx-2 align-self-start">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+              </div>
+             
+            </div>
+            <div class="offcanvas-body">
+              <div class="col-sm-4">
+                <nav class="navbar">
+                  <div>
+                      <hr class="sidebar-divider my-0">
+                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="sidebar-link" href="#">
+                            <i class="fa-solid fa-desktop"></i>
+                            <span>Dashboard</span>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="sidebar-link" href="#">
+                                  <i class="fa-solid fa-users"></i>
+                              <span>Users</span>
+                          </a>
+                        </li>
+                      </ul>
+                  </div>
+                </nav>
+                  
+            </div>
+            </div>
+          </div>
+
+            <div class="col page px-0">
+           
+              <div class="main-header">
+                <nav class="navbar justify-content-end">
+                  <div class="d-xs-block d-sm-none flex-grow-1 p-1">
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                      <i class="fa-solid fa-bars"></i></button>
+                  </div>
+
+                  <div class=" d-xs-block d-sm-none dropdown p-1">
+                    <a class="dropdown-toggle text-s text-grey" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-search fa-fw"></i>
+                    </a>
+                  
+                    <div class="dropdown-menu dropdown-menu-start" aria-labelledby="searchDropdown">
+                      <form class="form-inline mr-auto w-100 navbar-search p-1">
+                          <div class="input-group">
+                              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                              <div class="input-group-append">
+                                  <button class="btn btn-primary" type="button">
+                                      <i class="fas fa-search fa-sm"></i>
+                                  </button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                  </div>
+
+                 
+                  
+
+                  <div class="p-2 d-none d-sm-block">
+                      <form>
+                        <div class="input-group">
+                          <input type="text" class="form-control form-control-sm bg-light border-0 " placeholder="Search..." aria-label="Search" aria-describedby="basic-addon1">
+                          <div class="input-group-append">
+                            <button type="button" class="btn btn-primary btn-sm">
+                              <i class="fa-solid fa-magnifying-glass"></i></button>
+                          </div>
+                        </div>
+                      </form>
+                  
+                    
+                  </div>
+                  <div class="p-2 ">
+                    <div class="vr"></div>
+                  </div>
+                  <div class="p-2">
+                    <div id="profile" class="dropdown">
+                      <a href="#" class="text-reset text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="d-none d-md-inline  text-grey mr-2 text-gray-600 text-wrap text-s">Douglas McGee</span>
+                        <img src="https://picsum.photos/200/300" class="img-fluid rounded-circle" style="height: 30px;width: 30px;" alt="Responsive image">
+                      </a>
+
+                      <div class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#"><i class="fa-regular fa-user p-1"></i>Profile</a>
+                        <a class="dropdown-item" href="#"><i class="fa-solid fa-key  p-1"></i>Change Password</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="login.html"><i class="fa-solid fa-arrow-right-from-bracket  p-1"></i>Logout</a>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+                  
+                </nav>
+              </div>
+              <div class="page-body container-fluid">
+                <div class="page-heading p-2 d-flex justify-content-between">
+                  <h1 class="">Users</h1>
+                  <button class="btn btn-sm btn-primary shadow-sm">
+                    <i title="Generate Report" class="fa-solid fa-download"></i> <span class="d-none d-md-inline">Generate Report</span>
+                  </button>
+                </div>
+                <div class="container-fluid page-height">
+                  <div id="usersGrid" style="height: 100%; width:100%;" class="ag-theme-alpine"></div>
+                </div>
+                
+              </div>
+              <div class="page-footer">
+  
+              </div>
+         
+              
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.esm.min.js" integrity="sha512-9IAuCQeqbsF/CP2TJ7avKUW9/+dODxnKuPyj42O++oHkjGuuqj3ZLzTFtCihuRjb5G/aGefieF21ZoRG5kwzwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/b9786221c4.js" crossorigin="anonymous"></script>   
+     
+<script src="js/users.js"> </script>
+</html>

@@ -11,6 +11,9 @@
     height: 100vh;
     font-family: Mooli-Regular;
 }
+.page-height{
+    height:calc(100vh - 200px)
+}
 .main-header{
     background-color:  white;
 }
