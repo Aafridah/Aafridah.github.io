@@ -31,8 +31,6 @@ $(document).ready(function (){
            
           };
 
-         
-          // setup the grid after the page has finished loading
           const gridDiv = document.querySelector('#usersGrid');
             new agGrid.Grid(gridDiv, gridOptions);
          
