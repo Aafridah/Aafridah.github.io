@@ -31,19 +31,19 @@
             <div class="side-bar col-sm-4 col-md-3 col-lg-2 d-none d-md-block">
                 <nav class="navbar">
                   <div>
-                      <a class="navbar-brand brand brand-large" href="#">
+                      <a class="navbar-brand brand brand-large" href="index.html">
                         <i class="fas fa-laugh-wink fa-rotate-15 brand-logo"></i><span class="d-none d-md-inline">Brand</span>
                       </a>
                       <hr class="sidebar-divider my-0">
                       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="sidebar-link" href="#">
+                            <a class="sidebar-link" href="index.html">
                             <i class="fa-solid fa-desktop"></i>
                             <span>Dashboard</span>
                         </a>
                         </li>
                         <li class="nav-item">
-                              <a class="sidebar-link" href="#">
+                              <a class="sidebar-link" href="Users.html">
                                   <i class="fa-solid fa-users"></i>
                               <span>Users</span>
                           </a>
@@ -57,7 +57,7 @@
             <div class="side-bar col-sm-1 d-none d-sm-block d-md-none d-lg-none">
               <nav class="navbar justify-content-center">
                 <div>
-                  <a class="navbar-brand brand brand-small" href="#">
+                  <a class="navbar-brand brand brand-small" href="index.html">
                     <!-- <img src="https://picsum.photos/200" alt="brand-logo" class="img-fluid brand-logo"> -->
                     <i class="fas fa-laugh-wink fa-rotate-15 h2" ></i>
                   </a>
@@ -66,12 +66,12 @@
                     <hr class="sidebar-divider my-0">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                       <li class="nav-item" style="align-self: center;display: flex;">
-                          <a class="sidebar-link" href="#">
+                          <a class="sidebar-link" href="index.html">
                           <i class="fa-solid fa-desktop"></i>
                       </a>
                       </li>
                       <li class="nav-item" style="align-self: center;display: flex;">
-                            <a class="sidebar-link" href="#">
+                            <a class="sidebar-link" href="Users.html">
                                 <i class="fa-solid fa-users"></i>
                         </a>
                       </li>
@@ -194,10 +194,12 @@
                     <h1 class="">Users</h1>
                   </div>
                   <div class="align-self-center">
-                    <button class="btn btn-sm btn-primary shadow-sm">
-                      <i title="Generate Report" class="fa-solid fa-download"></i> <span class="d-none d-md-inline">Generate Report</span>
+                    <button class="btn btn-sm btn-outline-danger shadow-sm" data-bs-toggle="modal" data-bs-target="#addUserModal">
+                      <i title="Add User" class="fa-solid fa-user-plus p-1"></i><span class="d-none d-md-inline">Add User</span>
                     </button>
                   </div>
+                  
+         
              
                 </div>
                 <div class="container-fluid page-height">
@@ -214,7 +216,86 @@
         </div>
     </div>
     
-    
+    <div class="modal fade default-font" id="addUserModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <h5 class="modal-title" id="exampleModalLabel">Add User</h5>
+            </div>
+           <div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+           </div>
+          </div>
+          <div class="modal-body">
+            <form class="px-2">
+              <div class="row row-cols-1">
+                <div class="col mb-4">
+                  <input type="text" class="form-control form-control-lg rounded-5 text-s " id="userFirstName" placeholder="Enter First Name...">
+                </div>
+                <div class="col mb-4">
+                  <input type="text" class="form-control form-control-lg rounded-5 text-s" id="userLastName" placeholder="Enter Last Name...">
+                </div>
+                <div class="col mb-4">
+                  <input type="email" class="form-control form-control-lg rounded-5 text-s" id="userEmail" placeholder="Enter Email Address...">
+                </div>
+                <div class=" col mb-4">
+                  <input type="password" class="form-control form-control-lg rounded-5 text-s" id="userPassword"  placeholder="Password">
+                </div>
+                <div class=" col mb-4">
+                  <input type="password" class="form-control form-control-lg rounded-5 text-s" id="userPasswordRepeat"  placeholder="Repeat Password">
+                </div>
+              </div>
+              
+        
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade default-font" id="editUserModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <h5 class="modal-title" id="exampleModalLabel">Edit User</h5>
+            </div>
+           <div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+           </div>
+          </div>
+          <div class="modal-body">
+            <form class="px-2">
+              <div class="row row-cols-1">
+                <div class="col mb-4">
+                  <input type="text" class="form-control form-control-lg rounded-5 text-s " id="userFirstNameEdit" placeholder="Enter First Name...">
+                </div>
+                <div class="col mb-4">
+                  <input type="text" class="form-control form-control-lg rounded-5 text-s" id="userLastNameEdit" placeholder="Enter Last Name...">
+                </div>
+                <div class="col mb-4">
+                  <input type="email" class="form-control form-control-lg rounded-5 text-s" id="userEmailEdit" placeholder="Enter Email Address...">
+                </div>
+                
+              </div>
+              
+        
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
 </body>
 
 <script src="lib/jquery/jquery.min.js"></script>

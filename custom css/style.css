@@ -29,7 +29,9 @@
     transform: rotate(-15deg);
 }
 
-
+.default-font{
+    font-family: Mooli-Regular;
+}
 .brand{
     font-weight: bold;
     color: white;
